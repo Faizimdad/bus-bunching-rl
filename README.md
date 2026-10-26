@@ -46,7 +46,7 @@ results/         trained Q-table, logs, metrics and figures (committed for refer
 Requires Python 3.9+.
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/Faizimdad/bus-bunching-rl.git
 cd bus-bunching-rl
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
