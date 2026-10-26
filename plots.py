@@ -162,6 +162,27 @@ for ax, li, tl in zip(axes, [0, 2], ["low load (<30%)", "high load (>60%)"]):
 fig.tight_layout()
 save(fig, "policy")
 
+# single-panel version (high load) for the report column
+fig, ax = plt.subplots(figsize=(3.4, 2.7))
+pol = np.full((G, G), np.nan)
+for f in range(G):
+    for b in range(G):
+        s = (f * G + b) * L + 2
+        if visits[s].sum() > 0:
+            pol[f, b] = cfg.hold_options[int(np.argmax(Qt[s]))]
+ax.imshow(pol, origin="lower", cmap="Blues", vmin=-0.5, vmax=4.5)
+for f in range(G):
+    for b in range(G):
+        if not np.isnan(pol[f, b]):
+            ax.text(b, f, f"{pol[f, b]:.0f}", ha="center", va="center", fontsize=7,
+                    color="white" if pol[f, b] >= 3 else INK)
+ax.set_xticks(range(G)); ax.set_xticklabels(labels, rotation=40)
+ax.set_yticks(range(G)); ax.set_yticklabels(labels)
+ax.set_xlabel("gap behind / ideal spacing"); ax.set_ylabel("gap ahead / ideal spacing")
+ax.grid(False)
+fig.tight_layout()
+save(fig, "policy_high")
+
 # ------------------------------------------------------ 6. demand sensitivity
 sens = json.load(open(os.path.join(R, "sensitivity.json")))
 lams = sorted(sens, key=float)
@@ -170,7 +191,6 @@ for n in ORDER:
     ax.plot([float(l) for l in lams], [sens[l][n]["total_cost_per_pax_min"][0] for l in lams],
             marker="o", ms=4, lw=1.8, color=COLORS[n], label=SHORT[n])
 ax.axvline(0.6, color=MUTED, lw=0.8, ls=":")
-ax.text(0.607, 10.6, "trained\nhere", fontsize=6.5, color=MUTED, va="top")
 ax.set_xlabel("passenger arrival rate (pax/min/stop)")
 ax.set_ylabel("total cost per pax (min)")
 ax.set_title("Generalisation to unseen demand")

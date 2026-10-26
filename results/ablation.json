@@ -1,0 +1,110 @@
+[
+  {
+    "seed": 1,
+    "w_hold": 0.05,
+    "avg_wait_min": 4.875544644307485,
+    "headway_mean_min": 12.050402027095501,
+    "headway_cv": 0.14697527138922273,
+    "bunching_pct": 0.0,
+    "mean_hold_min": 0.2889538142922069,
+    "hold_delay_per_pax_min": 1.734627806426556,
+    "total_cost_per_pax_min": 6.610172450734041,
+    "boardings_per_hour": 432.32000000000005
+  },
+  {
+    "seed": 2,
+    "w_hold": 0.05,
+    "avg_wait_min": 4.923580362907484,
+    "headway_mean_min": 12.117333810085249,
+    "headway_cv": 0.14775926614378437,
+    "bunching_pct": 0.0,
+    "mean_hold_min": 0.3089335017673023,
+    "hold_delay_per_pax_min": 1.8221286609278424,
+    "total_cost_per_pax_min": 6.745709023835326,
+    "boardings_per_hour": 432.92
+  },
+  {
+    "seed": 3,
+    "w_hold": 0.05,
+    "avg_wait_min": 4.911969866721979,
+    "headway_mean_min": 12.047317950449843,
+    "headway_cv": 0.1508848294231849,
+    "bunching_pct": 0.0,
+    "mean_hold_min": 0.2842524659434914,
+    "hold_delay_per_pax_min": 1.7143975405932543,
+    "total_cost_per_pax_min": 6.626367407315232,
+    "boardings_per_hour": 432.6114285714286
+  },
+  {
+    "seed": 4,
+    "w_hold": 0.05,
+    "avg_wait_min": 4.919288470329616,
+    "headway_mean_min": 12.132258058395582,
+    "headway_cv": 0.14871725761183063,
+    "bunching_pct": 0.0,
+    "mean_hold_min": 0.30841196459440445,
+    "hold_delay_per_pax_min": 1.8516212109739845,
+    "total_cost_per_pax_min": 6.7709096813036,
+    "boardings_per_hour": 431.7428571428572
+  },
+  {
+    "seed": 1,
+    "w_hold": 0.0,
+    "avg_wait_min": 13.147322555713817,
+    "headway_mean_min": 19.317981440458208,
+    "headway_cv": 0.11065178053685373,
+    "bunching_pct": 0.0,
+    "mean_hold_min": 2.2322165916391272,
+    "hold_delay_per_pax_min": 13.58911204444803,
+    "total_cost_per_pax_min": 26.736434600161846,
+    "boardings_per_hour": 405.68571428571437
+  },
+  {
+    "seed": 1,
+    "w_hold": 0.02,
+    "avg_wait_min": 4.922154915018007,
+    "headway_mean_min": 12.070518949870168,
+    "headway_cv": 0.14810636902933144,
+    "bunching_pct": 0.0,
+    "mean_hold_min": 0.2839202142890544,
+    "hold_delay_per_pax_min": 1.6922256944872964,
+    "total_cost_per_pax_min": 6.614380609505304,
+    "boardings_per_hour": 432.4742857142857
+  },
+  {
+    "seed": 1,
+    "w_hold": 0.1,
+    "avg_wait_min": 4.932260317371618,
+    "headway_mean_min": 11.993664620865014,
+    "headway_cv": 0.16444285234161377,
+    "bunching_pct": 0.0,
+    "mean_hold_min": 0.28688081466360643,
+    "hold_delay_per_pax_min": 1.6467981918630594,
+    "total_cost_per_pax_min": 6.579058509234678,
+    "boardings_per_hour": 432.1085714285714
+  },
+  {
+    "seed": 1,
+    "w_hold": 0.2,
+    "avg_wait_min": 4.948688266766988,
+    "headway_mean_min": 11.92293887496577,
+    "headway_cv": 0.17167810427886998,
+    "bunching_pct": 0.0,
+    "mean_hold_min": 0.266164753415574,
+    "hold_delay_per_pax_min": 1.50321307495775,
+    "total_cost_per_pax_min": 6.451901341724738,
+    "boardings_per_hour": 431.3771428571428
+  },
+  {
+    "seed": 1,
+    "w_hold": 0.5,
+    "avg_wait_min": 5.3287252257938755,
+    "headway_mean_min": 11.748797855339319,
+    "headway_cv": 0.2922766712259113,
+    "bunching_pct": 0.8895401483494964,
+    "mean_hold_min": 0.22609272135655323,
+    "hold_delay_per_pax_min": 1.105815764848471,
+    "total_cost_per_pax_min": 6.434540990642348,
+    "boardings_per_hour": 430.37714285714287
+  }
+]
